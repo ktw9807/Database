@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  rgb(136, 167, 136);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: lightgoldenrodyellow;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: wheat;
+  height: 300px;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(136, 167, 136);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* 반응형으로 창이 작아지면 레이아웃이 자동정렬 됩니다. */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Layout</h2>
+<p>레이아웃의 기본적틀과 디자인입니다.</p>
+<h3>- code -</h3>
+
+
+<h1>결과값</h1>
+<p>↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</p>
+<header>
+  <h2>은행 관리 프로그램</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h2>section 부분</h2></li>
+      <li><a href="#">고객 정보</a></li>
+      <li><a href="#">section.2</a></li>
+      <li><a href="#">section.3</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>article 부분</h1>
+    <p>보통 본문의 내용이 들어갑니다.</p>
+    <p>색상과 모양은 취향에 맞게 변경해서 사용하시면 됩니다.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer 부분</p>
+</footer>
+
+</body>
+</html>
