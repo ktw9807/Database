@@ -9,8 +9,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'LeferiPoint-WhiteObliqueA';
 }
 
 header {
@@ -24,7 +31,7 @@ header {
 nav {
   float: left;
   width: 20%;
-  height: 700px; 
+  height: 1000px; 
   background: rgb(220, 220, 220);
   padding: 50px;
 }
@@ -39,7 +46,7 @@ article {
   padding: 50px;
   width: 80%;
   background-color: whitesmoke;
-  height: 700px;
+  height: 1000px;
 }
 
 section:after {
@@ -73,13 +80,21 @@ footer {
 <section>
   <nav>
     <ul>
-      <li><h2>section 부분</h2></li>
-      <li><a href="#">고객 정보</a></li>
+      <li><h2>목록</h2></li>
+      <li><a href="#" style="color: brown;"onclick="location.href='main.html'">홈 화면</a></li>
       <br>
-      <li><a href="#">관리 모드</a></li>
+      <li><a href="#" onclick="location.href='info.html'">고객 정보</a></li>
+      <br>
+      <li><a href="#" onclick="location.href='control.html'">관리 모드</a></li>
       <br>
       <li><a href="#">설정</a></li>
     </ul>
+
+    <div style="position:absolute; bottom:100px">
+      <p> 김민수 </p>
+      <p> 김태우 </p>
+      <p> 이한주 </p>
+    </div>
   </nav>
   
   <article>
@@ -87,9 +102,6 @@ footer {
   </article>
 </section>
 
-<footer>
-  <p>Footer 부분</p>
-</footer>
 
 </body>
 </html>
